@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+}
+
+.section-background {
+  position: absolute;
+  z-index: -2;
+}
+
+.foreground-top {
+  background-color: rgba(72, 83, 90, 0.85);
+  padding: 32px 0;
+}
+
+.foreground-bottom {
+  padding: 200px;
+  text-align: center;
+}
+
+.header .header-bg {
+  filter: grayscale(1);
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  background-color: #515f68;
+}
