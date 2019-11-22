@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'blueasy';
-  src:  url('../../fonts/blueasy.eot?o0881j');
-  src:  url('../../fonts/blueasy.eot?o0881j#iefix') format('embedded-opentype'),
-    url('../../fonts/blueasy.ttf?o0881j') format('truetype'),
-    url('../../fonts/blueasy.woff?o0881j') format('woff'),
-    url('../../fonts/blueasy.svg?o0881j#blueasy') format('svg');
+  font-family: "blueasy";
+  src: url("../fonts/blueasy.eot?o0881j");
+  src: url("../fonts/blueasy.eot?o0881j#iefix") format("embedded-opentype"),
+    url("../fonts/blueasy.ttf?o0881j") format("truetype"),
+    url("../fonts/blueasy.woff?o0881j") format("woff"),
+    url("../fonts/blueasy.svg?o0881j#blueasy") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'blueasy' !important;
+  font-family: "blueasy" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

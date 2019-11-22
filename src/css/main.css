@@ -8,17 +8,21 @@
   position: relative;
   overflow: hidden; }
 
+a:hover {
+  text-decoration: none; }
+
 @font-face {
-  font-family: 'blueasy';
-  src: url("../../fonts/blueasy.eot?o0881j");
-  src: url("../../fonts/blueasy.eot?o0881j#iefix") format("embedded-opentype"), url("../../fonts/blueasy.ttf?o0881j") format("truetype"), url("../../fonts/blueasy.woff?o0881j") format("woff"), url("../../fonts/blueasy.svg?o0881j#blueasy") format("svg");
+  font-family: "blueasy";
+  src: url("../fonts/blueasy.eot?o0881j");
+  src: url("../fonts/blueasy.eot?o0881j#iefix") format("embedded-opentype"), url("../fonts/blueasy.ttf?o0881j") format("truetype"), url("../fonts/blueasy.woff?o0881j") format("woff"), url("../fonts/blueasy.svg?o0881j#blueasy") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'blueasy' !important;
+  font-family: "blueasy" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -41,6 +45,10 @@
 .icon-twitter:before {
   content: "\e903"; }
 
+.icon {
+  font-size: 30px;
+  color: #fff; }
+
 .card {
   background-color: transparent;
   border-color: transparent; }
@@ -60,6 +68,9 @@
 
 .header {
   position: relative; }
+
+.header .section-foreground {
+  padding: 0; }
 
 .section-background {
   position: absolute;
@@ -89,6 +100,13 @@
 .card img {
   height: 100%;
   width: auto; }
+
+.section-background img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-color: #515f68; }
 
 .nav-link {
   color: #fff;
@@ -128,6 +146,16 @@
   background-color: #4bcaff;
   color: #fff; }
 
+.section-photo {
+  color: #fff;
+  padding: 0; }
+
+.section-foreground {
+  padding: 80px 0; }
+
+.section-background {
+  height: 100%; }
+
 .video {
   padding-top: 56.25%;
   position: relative; }
@@ -138,3 +166,17 @@
   right: 0;
   bottom: 0;
   left: 0; }
+
+.social-list {
+  list-style: none; }
+
+.social-list-item {
+  border: 2px solid #ffffff;
+  width: 64px;
+  height: 64px; }
+  .social-list-item:hover {
+    color: #fff;
+    background-color: #4bcaff; }
+
+.social-list-item-link {
+  color: #fff; }
