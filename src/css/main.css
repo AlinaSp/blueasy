@@ -11,6 +11,13 @@
 a:hover {
   text-decoration: none; }
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+body {
+  font-family: "SegoeUILight" !important; }
+
 @font-face {
   font-family: "blueasy";
   src: url("../fonts/blueasy.eot?o0881j");
@@ -84,6 +91,18 @@ a:hover {
   font-style: normal;
   font-weight: normal; }
 
+.btn {
+  background-color: #4bcaff;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Segoe UI";
+  padding: 15px; }
+  .btn:hover {
+    color: #4bcaff;
+    background-color: #fff; }
+
 .card {
   background-color: transparent;
   border-color: transparent; }
@@ -105,6 +124,14 @@ a:hover {
     -webkit-box-shadow: 1px 1px 2px 0 #4bcaff;
     box-shadow: 1px 1px 2px 0 #4bcaff;
     border-color: #4bcaff; }
+
+.label {
+  font-family: "Segoe UI";
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 700; }
 
 .hero-title {
   text-transform: uppercase;
@@ -207,6 +234,28 @@ a:hover {
 
 .section-contact {
   padding: 0; }
+
+.contact-form-text,
+.contact-form-adress {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.section-white {
+  margin-top: 80px; }
+
+.section-text-big {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #515f67; }
+
+.section-text-accent {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #4bcaff; }
 
 .video {
   padding-top: 56.25%;
