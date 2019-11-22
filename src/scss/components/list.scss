@@ -1,0 +1,18 @@
+.social-list {
+  list-style: none;
+}
+
+.social-list-item {
+  border: 2px solid #ffffff;
+  width: 64px;
+  height: 64px;
+  &:hover {
+    color: #fff;
+    background-color: $accent-color;
+  }
+}
+
+.social-list-item-link {
+  color: #fff;
+  
+}
