@@ -49,6 +49,41 @@ a:hover {
   font-size: 30px;
   color: #fff; }
 
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"), url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+  src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"), url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 .card {
   background-color: transparent;
   border-color: transparent; }
@@ -58,6 +93,18 @@ a:hover {
 
 .card-title {
   text-transform: uppercase; }
+
+.form-control {
+  background: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+  color: #fff; }
+  .form-control:focus {
+    background: transparent;
+    color: #fff;
+    -webkit-box-shadow: 1px 1px 2px 0 #4bcaff;
+    box-shadow: 1px 1px 2px 0 #4bcaff;
+    border-color: #4bcaff; }
 
 .hero-title {
   text-transform: uppercase;
@@ -129,7 +176,9 @@ a:hover {
 
 .section-title {
   text-transform: uppercase;
-  padding-bottom: 45px; }
+  padding-bottom: 45px;
+  font-family: "Segoe UI";
+  font-weight: 300; }
   .section-title:after {
     content: "";
     display: block;
@@ -137,6 +186,9 @@ a:hover {
     height: 2px;
     background-color: currentColor;
     margin-top: 7px; }
+
+.contact-title {
+  color: #fff; }
 
 .section-gray {
   background-color: #515f67;
@@ -153,8 +205,8 @@ a:hover {
 .section-foreground {
   padding: 80px 0; }
 
-.section-background {
-  height: 100%; }
+.section-contact {
+  padding: 0; }
 
 .video {
   padding-top: 56.25%;
