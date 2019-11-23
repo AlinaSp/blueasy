@@ -1,4 +1,19 @@
 .footer {
   font-family: "SegoeUISemiBold";
   font-size: 12px;
+  background: #353f47;
+}
+.nav-item-footer,
+.copyright {
+  border-right: 1px #515f67 solid;
+  padding: 0 10px;
+  color: #515f67;
+  font-family: "Segoe UI - Semi Bold";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  &:last-child {
+    border: none;
+  }
 }
