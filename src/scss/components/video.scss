@@ -11,6 +11,17 @@
   left: 0;
 }
 .video-control {
-  max-width: 560px;
   height: 313px;
+}
+
+@media (max-width: 991px) {
+  .video-control {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .video-control {
+    height: 200px;
+  }
 }

@@ -7,3 +7,15 @@
   background-color: rgba(72, 83, 90, 0.85);
   line-height: 1.5em;
 }
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 490px) {
+  .hero-title {
+    font-size: 28px;
+  }
+}
