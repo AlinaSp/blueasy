@@ -1,10 +1,14 @@
 $colwhite: #fff;
+.form-group {
+  margin-bottom: 0;
+}
 
 .form-control {
   background: transparent;
   border-radius: 0;
   border: 2px solid $colwhite;
   color: $colwhite;
+  height: 60px;
   &:focus {
     background: transparent;
     color: $colwhite;

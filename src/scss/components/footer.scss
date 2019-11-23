@@ -1,7 +1,8 @@
 .footer {
   font-family: "SegoeUISemiBold";
   font-size: 12px;
-  background: #353f47;
+  background: hsl(207, 15%, 24%);
+  padding-bottom: 50px;
 }
 .nav-item-footer,
 .copyright {
@@ -15,5 +16,28 @@
   text-transform: uppercase;
   &:last-child {
     border: none;
+  }
+}
+
+.nav-footer a.nav-item-footer:hover {
+  color: $accent-color;
+}
+
+@media (max-width: 575px) {
+  .footer .col-12 {
+    display: flex;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 336px) {
+  .nav-item-footer {
+  padding: 0 5px;
   }
 }

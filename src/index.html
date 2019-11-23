@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Blueasy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,7 +16,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="home">
         <div class="section-background">
           <img class="header-bg" src="images/hero-bg.jpg" alt="background" />
         </div>
@@ -69,9 +70,9 @@
           <div class="foreground-bottom">
             <div class="container">
               <div class="row">
-                <div class="offset-1 col-lg-10 col-md-12 hero">
+                <div class="col hero mx-auto">
                   <h1 class="hero-title">
-                    “I’m looking for the unexpected. I’m looking for things I’ve never seen before.”
+                    “I’m looking for the unexpected.<br> I’m looking for things I’ve never seen before.”
                   </h1>
                 </div>
               </div>
@@ -80,7 +81,7 @@
         </div>
       </header>
       <main class="main">
-        <section class="section section-accent">
+        <section class="section section-accent" id="services">
           <div class="container">
             <div class="row">
               <div class="col-lg-2 col-sm-4 col-6">
@@ -152,7 +153,7 @@
           </div>
         </section>
 
-        <section class="section section-white">
+        <section class="section section-white" id="portfolio">
           <div class="container">
             <div class="row">
               <div class="col-lg-2">
@@ -228,7 +229,7 @@
                   love pudding. Ice cream I love pudding apple pie marshmallow. Cupcake marzipan oat
                   cake bonbon I love candy canes toffee.
                 </p>
-                <a class="button btn href=">visit me</a>
+                <a class="button btn btn-gray" href="#">visit me</a>
               </div>
               <div class="col-lg-6 offset-1 col-md-12">
                 <div class="video-control">
@@ -249,10 +250,10 @@
         <section class="section section-accent">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                 <h2 class="section-title">twitter</h2>
               </div>
-              <div class="col-lg-6 ml-auto">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-auto">
                 <a href="#">
                   <div class="icon icon-twitter d-flex justify-content-end"></div>
                 </a>
@@ -269,7 +270,7 @@
           </div>
         </section>
 
-        <section class="section section-photo">
+        <section class="section section-photo" id="features">
           <div class="section-background">
             <img src="images/section-bg-1.png" alt="bg" />
           </div>
@@ -289,14 +290,18 @@
                   </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
+                  <p class="section-text">
                   Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame
                   snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton
                   candy. Cake toffee pie bear claw pastry.
+                  </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
+                  <p class="section-text">
                   Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I
                   love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake
                   marzipan oat cake bonbon I love candy canes toffee.
+                  </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <ul class="social-list d-flex">
@@ -334,9 +339,7 @@
                 <h2 class="section-title">Testimonials</h2>
               </div>
               <div class="col-6 ml-auto">
-                <span class=" decore-quote d-flex justify-content-end"
-                  ><img src="images/kow.svg" alt=""
-                /></span>
+                <span class=" decore-quote d-flex justify-content-end"></span>
               </div>
             </div>
             <div class="row">
@@ -352,7 +355,7 @@
           </div>
         </section>
 
-        <section class="section section-contact section-photo">
+        <section class="section section-contact section-photo" id="contact">
           <div class="section-background">
             <img src="images/section-bg-2.png" alt="bg" />
           </div>
@@ -363,7 +366,7 @@
                   <h2 class="section-title contact-title">Contact</h2>
                 </div>
               </div>
-              <div class="row mb-5">
+              <div class="row mb-4">
                 <div class="col-6">
                   <form class="form">
                     <div class="form-group">
@@ -384,7 +387,7 @@
                   >
                 </div>
               </div>
-              <div class="row">
+              <div class="row mb-4">
                 <div class="col-6">
                   <form class="form">
                     <div class="form-group">
@@ -401,20 +404,19 @@
                   <span class="contact-form-adress">
                     Linda Newman <br />
                     W325 State Road <br />
-                    123 Mondovi, WI(Wisconsin) <br />
-                    98746-54321 <br />(715) 946 - 1234</span
-                  >
+                    123 Mondovi, WI(Wisconsin) 98746-54321 
+                    <br />(715) 946 - 1234</span>
                 </div>
               </div>
               <div class="row mt-2">
-                <div class="col">
+                <div class="col mb-4">
                   <form class="form">
                     <div class="form-group">
                       <label class="label" for="exampleFormControlTextarea1">message</label>
                       <textarea
                         class="form-control"
                         id="exampleFormControlTextarea1"
-                        rows="6"
+                        rows="7"
                       ></textarea>
                     </div>
                   </form>
@@ -432,15 +434,15 @@
         <footer class="footer section-gray section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 col-sm-12">
-                <a class="nav-footer">
+              <div class="col-lg-10 col-sm-10 col-12">
+                <nav class="nav-footer">
                   <a class="nav-item-footer" href="#home">home</a>
                   <a class="nav-item-footer" href="#services">services</a>
                   <a class="nav-item-footer" href="#portfolio">portfolio</a>
                   <a class="nav-item-footer" href="#contact">contact</a>
-                </a>
+                </nav>
               </div>
-              <div class="col-lg-6 col-sm-12 d-flex justify-content-end">
+              <div class="col-lg-2 col-sm-2 col-12 d-flex justify-content-end">
                 <p class="copyright">2013 ©</p>
               </div>
             </div>

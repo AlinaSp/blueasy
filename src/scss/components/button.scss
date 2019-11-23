@@ -1,5 +1,6 @@
 .btn {
-  background-color: #4bcaff;
+  background-color: $accent-color;
+  border-color: $accent-color;
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 700;
@@ -7,7 +8,20 @@
   font-family: "Segoe UI";
   padding: 15px;
   &:hover {
-    color: #4bcaff;
+    color: $accent-color;
     background-color: #fff;
+    border-color: #fff;
+  }
+}
+
+.btn-gray {
+  background-color: transparent;
+  color: #353f46;
+  border: 2px solid #353f46;
+  padding: 16px 40px;
+  &:hover {
+    color: #353f46;
+    border: 2px solid #353f46;
+    background-color: $accent-color;
   }
 }
