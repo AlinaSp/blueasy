@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Blueasy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -72,7 +72,8 @@
               <div class="row">
                 <div class="col hero mx-auto">
                   <h1 class="hero-title">
-                    “I’m looking for the unexpected.<br> I’m looking for things I’ve never seen before.”
+                    “I’m looking for the unexpected.<br />
+                    I’m looking for things I’ve never seen before.”
                   </h1>
                 </div>
               </div>
@@ -156,61 +157,114 @@
         <section class="section section-white" id="portfolio">
           <div class="container">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-lg-6">
                 <h2 class="section-title">Portfolio</h2>
               </div>
-              <div class="col-lg-6 col-md-7 col-sm-8 col-10">
+              <div class="col-lg-6 col-md-7 col-sm-8 col-10 d-flex justify-content-end">
                 <nav class="filter">
-                  <button class="filter-item"></button>
-                  <button class="filter-item"></button>
-                  <button class="filter-item"></button>
-                  <button class="filter-item"></button>
-                  <button class="filter-item"></button>
+                  
+                <button
+                  class="portfolio-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".multi-collapse"
+                  aria-expanded="true"
+                  aria-controls="panoramas macro"
+                >
+                  all
+                </button>
+                <button
+                  class="portfolio-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#panoramas"
+                  aria-expanded="true"
+                  aria-controls="panoramas"
+                  >panoramas</button
+                >
+                <button
+                  class="portfolio-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#portraits"
+                  aria-expanded="true"
+                  aria-controls="portraits"
+                >
+                  portraits
+                </button>
+                <button
+                  class="portfolio-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#macro"
+                  aria-expanded="true"
+                  aria-controls="macro"
+                >
+                  macro
+                </button>
+                <button
+                  class="portfolio-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#journal"
+                  aria-expanded="true"
+                  aria-controls="journal"
+                >
+                  journal
+                </button>
+              
                 </nav>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            
+              <!-- stars========================================================================== -->
+              
+              <div class="row">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="journal">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio1.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="macro">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio2.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="portraits">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio3.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="panoramas">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio4.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="macro">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio5.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="journal">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio6.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="portraits">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio7.png" alt="img" />
                 </a>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 collapse multi-collapse" id="panoramas">
                 <a href="" class="portfolio-photo">
                   <img class="portfolio-photo-img" src="images/portfolio8.png" alt="img" />
                 </a>
               </div>
+              </div>
+              <!--======================================================================================== -->
+            
             </div>
+            <!-- =================END============================================================= -->
           </div>
         </section>
 
@@ -291,16 +345,16 @@
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <p class="section-text">
-                  Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame
-                  snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton
-                  candy. Cake toffee pie bear claw pastry.
+                    Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake.
+                    Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes
+                    cotton candy. Cake toffee pie bear claw pastry.
                   </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <p class="section-text">
-                  Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I
-                  love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake
-                  marzipan oat cake bonbon I love candy canes toffee.
+                    Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I
+                    love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake
+                    marzipan oat cake bonbon I love candy canes toffee.
                   </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
@@ -380,7 +434,8 @@
                   </form>
                 </div>
                 <div class="offset-1 col mt-4">
-                  <span class="contact-form-text">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
+                  <span class="contact-form-text"
+                    >Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
                     Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar
                     gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
                   </span>
@@ -403,8 +458,9 @@
                   <span class="contact-form-text pt-3">
                     Linda Newman <br />
                     W325 State Road <br />
-                    123 Mondovi, WI(Wisconsin) 98746-54321 
-                    <br />(715) 946 - 1234</span>
+                    123 Mondovi, WI(Wisconsin) 98746-54321
+                    <br />(715) 946 - 1234</span
+                  >
                 </div>
               </div>
               <div class="row mt-2">
@@ -428,15 +484,15 @@
               </div>
               <div class="row contact-form-text-down">
                 <div class="col-12 py-3">
-                    Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
-                    Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar
-                    gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
+                  Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet
+                  lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar
+                  gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
                 </div>
                 <div class="col-12 py-3">
-                    Linda Newman <br />
-                    W325 State Road <br />
-                    123 Mondovi, WI(Wisconsin) 98746-54321 
-                    <br />(715) 946 - 1234
+                  Linda Newman <br />
+                  W325 State Road <br />
+                  123 Mondovi, WI(Wisconsin) 98746-54321
+                  <br />(715) 946 - 1234
                 </div>
               </div>
             </div>

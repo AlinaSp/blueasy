@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -12,11 +13,33 @@ a:hover {
   text-decoration: none; }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto; }
 
 body {
   font-family: "SegoeUILight" !important; }
+
+.link {
+  color: #fff;
+  font-weight: 700; }
+  .link:hover {
+    text-decoration: underline;
+    color: #fff; }
+
+.decore-quote {
+  position: relative; }
+  .decore-quote:after {
+    content: "”";
+    display: block;
+    color: #515f67;
+    font-size: 60px;
+    font-family: 'Bitter', serif;
+    position: absolute;
+    top: -20px; }
+
+textarea {
+  resize: none; }
 
 @font-face {
   font-family: "blueasy";
@@ -56,6 +79,10 @@ body {
   font-size: 30px;
   color: #fff; }
 
+@media (max-width: 420px) {
+  .icon {
+    font-size: 24px; } }
+
 @font-face {
   font-family: "SegoeUIRegular";
   src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
@@ -93,6 +120,7 @@ body {
 
 .btn {
   background-color: #4bcaff;
+  border-color: #4bcaff;
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 700;
@@ -101,7 +129,33 @@ body {
   padding: 15px; }
   .btn:hover {
     color: #4bcaff;
-    background-color: #fff; }
+    background-color: #fff;
+    border-color: #fff; }
+
+.btn-gray {
+  background-color: transparent;
+  color: #353f46;
+  border: 2px solid #353f46;
+  padding: 16px 40px; }
+  .btn-gray:hover {
+    color: #353f46;
+    border: 2px solid #353f46;
+    background-color: #4bcaff; }
+
+.portfolio-btn {
+  padding: 0 18px;
+  opacity: 0.9;
+  border: transparent;
+  background: none;
+  color: #515f67;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase; }
+  .portfolio-btn:hover {
+    color: #4bcaff;
+    border: 1px solid #4bcaff; }
 
 .card {
   background-color: transparent;
@@ -119,11 +173,31 @@ body {
   font-family: "SegoeUIRegular";
   font-size: 12px; }
 
+@media (max-width: 991px) {
+  .card {
+    padding-bottom: 20px; }
+  .card-text {
+    max-width: 400px; } }
+
+@media (max-width: 575px) {
+  .card {
+    padding-left: 10vw;
+    padding-bottom: 30px; }
+  .card-text {
+    font-size: 14px; } }
+
+.portfolio-photo-img {
+  margin-bottom: 30px; }
+
+.form-group {
+  margin-bottom: 0; }
+
 .form-control {
   background: transparent;
   border-radius: 0;
   border: 2px solid #fff;
-  color: #fff; }
+  color: #fff;
+  height: 60px; }
   .form-control:focus {
     background: transparent;
     color: #fff;
@@ -139,12 +213,21 @@ body {
   font-size: 14px;
   font-weight: 700; }
 
-.contact-form-text,
-.contact-form-adress {
+.contact-form-text {
+  display: block;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px; }
+
+.contact-form-text-down {
+  display: none; }
+
+@media (max-width: 768px) {
+  .contact-form-text {
+    display: none; }
+  .contact-form-text-down {
+    display: block; } }
 
 .hero-title {
   font-family: "SegoeUILight";
@@ -154,6 +237,14 @@ body {
   display: inline;
   background-color: rgba(72, 83, 90, 0.85);
   line-height: 1.5em; }
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px; } }
+
+@media (max-width: 490px) {
+  .hero-title {
+    font-size: 28px; } }
 
 .header {
   position: relative; }
@@ -170,7 +261,7 @@ body {
   padding: 32px 0; }
 
 .foreground-bottom {
-  padding: 200px;
+  padding: 200px 0;
   text-align: center; }
 
 .header .header-bg {
@@ -181,6 +272,14 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #515f68; }
+
+@media (max-width: 768px) {
+  .foreground-bottom {
+    padding: 100px 0; } }
+
+@media (max-width: 490px) {
+  .foreground-bottom {
+    padding: 60px 0; } }
 
 .card-img {
   height: 48px;
@@ -216,6 +315,14 @@ body {
 .nav-item {
   padding: 0 15px; }
 
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 40px; }
+
 .section {
   padding: 80px 0;
   position: relative;
@@ -247,11 +354,16 @@ body {
   color: #fff;
   padding: 0; }
 
+.section.section-photo {
+  padding: 0; }
+
 .section-foreground {
   padding: 80px 0; }
 
-.section-white {
-  margin-top: 80px; }
+.section-background {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .section-text-big {
   font-family: "SegoeUILight";
@@ -264,19 +376,37 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 50px;
-  color: #4bcaff; }
+  color: #4bcaff;
+  margin: 0; }
 
 .section-text {
   font-size: 14px;
   font-family: "SegoeUIRegular"; }
 
-.social-list-item {
-  margin-right: 10px; }
+@media (max-width: 991px) {
+  .section-photo .row {
+    max-width: 800px;
+    margin: 0 auto; }
+  .section-photo .row:first-child {
+    margin: 0; } }
+
+@media (max-width: 490px) {
+  .section {
+    padding: 40px 0; }
+  .section-text {
+    font-size: 16px;
+    padding-bottom: 10px; }
+  .section-text-big {
+    font-size: 20px;
+    line-height: 30px; }
+  .section-title {
+    padding-bottom: 20px; } }
 
 .footer {
   font-family: "SegoeUISemiBold";
   font-size: 12px;
-  background: #353f47; }
+  background: #343e46;
+  padding-bottom: 50px; }
 
 .nav-item-footer,
 .copyright {
@@ -292,6 +422,26 @@ body {
   .copyright:last-child {
     border: none; }
 
+.nav-footer a.nav-item-footer:hover {
+  color: #4bcaff; }
+
+@media (max-width: 575px) {
+  .footer .col-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important; } }
+
+@media (max-width: 490px) {
+  .footer {
+    padding-bottom: 20px; } }
+
+@media (max-width: 336px) {
+  .nav-item-footer {
+    padding: 0 5px; } }
+
 .video {
   padding-top: 56.25%;
   position: relative; }
@@ -304,8 +454,15 @@ body {
   left: 0; }
 
 .video-control {
-  max-width: 560px;
   height: 313px; }
+
+@media (max-width: 991px) {
+  .video-control {
+    padding-top: 20px; } }
+
+@media (max-width: 540px) {
+  .video-control {
+    height: 200px; } }
 
 .social-list {
   list-style: none; }
@@ -313,10 +470,16 @@ body {
 .social-list-item {
   border: 2px solid #ffffff;
   width: 64px;
-  height: 64px; }
+  height: 64px;
+  margin-right: 20px; }
   .social-list-item:hover {
     color: #fff;
     background-color: #4bcaff; }
 
 .social-list-item-link {
   color: #fff; }
+
+@media (max-width: 420px) {
+  .social-list-item {
+    width: 44px;
+    height: 44px; } }
