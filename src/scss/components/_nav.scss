@@ -1,4 +1,4 @@
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
   font-family: "SegoeUIBold";
   font-size: 14px;
   color: #fff;
@@ -11,16 +11,28 @@
   }
 }
 
-.active .nav-link {
+.navbar-dark .navbar-nav .active .nav-link {
   color: #4bcaff;
   border: 1px solid #4bcaff;
   cursor: default;
 }
-.nav-item {
+.navbar-dark .navbar-nav .nav-item {
   padding: 0 15px;
 }
 .filter {
   display: flex;
   flex-wrap: wrap;
   height: 40px;
+}
+
+.navbar-collapse .nav-link {
+  text-align: center;
+}
+
+.navbar-collapse .active .nav-link {
+  border-color: transparent;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  outline: transparent;
 }
