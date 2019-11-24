@@ -1,0 +1,43 @@
+.btn {
+  background-color: $accent-color;
+  border-color: $accent-color;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Segoe UI";
+  padding: 15px;
+  &:hover {
+    color: $accent-color;
+    background-color: #fff;
+    border-color: #fff;
+  }
+}
+
+.btn-gray {
+  background-color: transparent;
+  color: #353f46;
+  border: 2px solid #353f46;
+  padding: 16px 40px;
+  &:hover {
+    color: #353f46;
+    border: 2px solid #353f46;
+    background-color: $accent-color;
+  }
+}
+.portfolio-btn {
+  padding: 0 18px;
+  opacity: 0.9;
+  border: transparent;
+  background: none;
+  color: #515f67;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  &:hover {
+    color: #4bcaff;
+    border: 1px solid #4bcaff;
+  }
+}

@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.header .section-foreground {
+  padding: 0;
+}
+
 .section-background {
   position: absolute;
   z-index: -2;
@@ -13,7 +17,7 @@
 }
 
 .foreground-bottom {
-  padding: 200px;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -23,4 +27,16 @@
   height: 100%;
   object-fit: cover;
   background-color: #515f68;
+}
+
+@media (max-width: 768px) {
+  .foreground-bottom {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 490px) {
+  .foreground-bottom {
+    padding: 60px 0;
+  }
 }

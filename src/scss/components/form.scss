@@ -1,0 +1,47 @@
+$colwhite: #fff;
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-control {
+  background: transparent;
+  border-radius: 0;
+  border: 2px solid $colwhite;
+  color: $colwhite;
+  height: 60px;
+  &:focus {
+    background: transparent;
+    color: $colwhite;
+    box-shadow: 1px 1px 2px 0 #4bcaff;
+    border-color: #4bcaff;
+  }
+}
+.label {
+  font-family: "Segoe UI";
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.contact-form-text {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-form-text-down {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contact-form-text {
+    display: none;
+  }
+  .contact-form-text-down {
+    display: block;
+  }
+}
+

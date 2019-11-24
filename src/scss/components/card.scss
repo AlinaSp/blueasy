@@ -9,4 +9,33 @@
 
 .card-title {
   text-transform: uppercase;
+  font-family: "SegoeUIRegular";
+  font-size: 24px;
+}
+
+.card-text {
+  font-family: "SegoeUIRegular";
+  font-size: 12px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    padding-bottom: 20px;
+  }
+  .card-text {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .card {
+    padding-left: 10vw;
+    padding-bottom: 30px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+}
+.portfolio-photo-img {
+  margin-bottom: 30px;
 }

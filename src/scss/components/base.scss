@@ -8,3 +8,41 @@
   position: relative;
   overflow: hidden;
 }
+
+a:hover {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+body {
+  font-family: "SegoeUILight" !important;
+}
+
+.link {
+  color: #fff;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+.decore-quote {
+  position: relative;
+  &:after {
+    content: "”";
+    display: block;
+    color: #515f67;
+    font-size: 60px;
+    font-family: 'Bitter', serif;
+    position: absolute;
+    top: -20px;
+  }
+}
+
+textarea {
+  resize: none;
+}

@@ -1,4 +1,6 @@
 .nav-link {
+  font-family: "SegoeUIBold";
+  font-size: 14px;
   color: #fff;
   text-transform: uppercase;
   opacity: 0.9;
@@ -9,8 +11,16 @@
   }
 }
 
-.nav-item.active .nav-link{
+.active .nav-link {
   color: #4bcaff;
   border: 1px solid #4bcaff;
   cursor: default;
+}
+.nav-item {
+  padding: 0 15px;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
 }
