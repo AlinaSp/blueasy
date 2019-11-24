@@ -8,9 +8,13 @@
   width: auto;
 }
 
-.section-background img {
+.section-background > img {
   width: auto;
   height: 100%;
   object-fit: cover;
   background-color: #515f68;
+}
+
+.portfolio-photo > img {
+  background-color: #979797;
 }
