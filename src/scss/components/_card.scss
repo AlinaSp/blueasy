@@ -35,7 +35,32 @@
   .card-text {
     font-size: 14px;
   }
+  .portfolio-photo-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
-.portfolio-photo-img {
+.card-portf:hover .overlay-plus {
+  display: block;
+}
+
+.overlay-plus {
+  display: none;
+  font-size: 60px;
+  color: white !important;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 130px;
+}
+.card-portf {
   margin-bottom: 30px;
+  &:hover {
+    background-color: #272d33;
+  }
+}
+.card-portf-grid {
+  position: relative;
 }

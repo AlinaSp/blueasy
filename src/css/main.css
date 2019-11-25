@@ -157,6 +157,28 @@ textarea {
     color: #4bcaff;
     border: 1px solid #4bcaff; }
 
+@media (max-width: 575px) {
+  .btn-gray {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 30px 0; } }
+
+.btn-menu {
+  display: none; }
+
+@media (max-width: 1100px) {
+  .portfolio-btn {
+    display: none; }
+  .btn-menu {
+    display: block; } }
+
+.dropdown-item {
+  font-size: 24px; }
+
 .card {
   background-color: transparent;
   border-color: transparent; }
@@ -184,10 +206,36 @@ textarea {
     padding-left: 10vw;
     padding-bottom: 30px; }
   .card-text {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .portfolio-photo-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto; } }
 
-.portfolio-photo-img {
+.card-portf:hover .overlay-plus {
+  display: block; }
+
+.overlay-plus {
+  display: none;
+  font-size: 60px;
+  color: white !important;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 130px; }
+
+.card-portf {
   margin-bottom: 30px; }
+  .card-portf:hover {
+    background-color: #272d33; }
+
+.card-portf-grid {
+  position: relative; }
 
 .form-group {
   margin-bottom: 0; }
