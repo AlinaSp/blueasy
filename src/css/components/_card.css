@@ -1,51 +1,46 @@
 .card {
   background-color: transparent;
-  border-color: transparent;
-}
+  border-color: transparent; }
 
 .card-body {
-  padding: 0;
-}
+  padding: 0; }
 
 .card-title {
   text-transform: uppercase;
   font-family: "SegoeUIRegular";
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 .card-text {
   font-family: "SegoeUIRegular";
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 @media (max-width: 991px) {
   .card {
-    padding-bottom: 20px;
-  }
+    padding-bottom: 20px; }
   .card-text {
-    max-width: 400px;
-  }
-}
+    max-width: 400px; } }
 
 @media (max-width: 575px) {
   .card {
     padding-left: 10vw;
-    padding-bottom: 30px;
-  }
+    padding-bottom: 30px; }
   .card-text {
-    font-size: 14px;
-  }
+    font-size: 14px; }
   .portfolio-photo-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     width: 270px;
-    height: 270px;
-  }
-}
+    height: 270px; } }
+
 .card-portf:hover .overlay-plus {
   display: block;
-}
+  width: 270px;
+  height: 270px; }
 
 .overlay-plus {
   display: none;
@@ -55,18 +50,18 @@
   top: 80px;
   right: 0;
   bottom: 0;
-  left: 110px;
-}
-.card-portf {
-  position: relative;
-  margin-bottom: 30px;
+  left: 130px;
   width: 270px;
-  height: 270px;
-  &:hover {
+  height: 270px; }
+
+.card-portf {
+  margin-bottom: 30px; }
+  .card-portf:hover {
     background-color: #272d33;
-  }
-}
+    width: 270px;
+    height: 270px; }
+
 .card-portf-grid {
-  display: flex;
-  justify-content: center;
-}
+  position: relative;
+  width: 270px;
+  height: 270px; }
