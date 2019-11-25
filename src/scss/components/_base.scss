@@ -37,7 +37,7 @@ body {
     display: block;
     color: #515f67;
     font-size: 60px;
-    font-family: 'Bitter', serif;
+    font-family: "Bitter", serif;
     position: absolute;
     top: -20px;
   }
@@ -45,4 +45,13 @@ body {
 
 textarea {
   resize: none;
+}
+.end-center {
+  justify-content: flex-end;
+}
+
+@media (max-width: 575px) {
+  .end-center {
+    justify-content: center;
+  }
 }
