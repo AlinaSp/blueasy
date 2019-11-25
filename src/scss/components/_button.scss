@@ -41,10 +41,13 @@
     border: 1px solid $accent-color;
   }
 }
-.btn-secondary.focus, .btn-secondary:focus {
+.btn-secondary.focus,
+.btn-secondary:focus {
   box-shadow: none;
 }
-.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none;
 }
 @media (max-width: 575px) {
@@ -69,6 +72,21 @@
 .dropdown-item {
   font-size: 24px;
   font-family: "SegoeUIRegular";
+}
+
+.btn.btn-secondary.dropdown-toggle.btn-filter {
+  color: #515f67;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+button:focus {
+  outline: none;
 }
 
 .btn.btn-secondary.dropdown-toggle.btn-filter {
