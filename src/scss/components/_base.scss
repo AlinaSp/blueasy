@@ -46,3 +46,13 @@ body {
 textarea {
   resize: none;
 }
+
+.end-center {
+  justify-content: flex-end;
+}
+
+@media (max-width: 575px) {
+  .end-center {
+    justify-content: center;
+  }
+}
